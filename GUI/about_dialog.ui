@@ -430,7 +430,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../development/ACT_ZIF_GUI/cedt.jpg</normaloff>../../../development/ACT_ZIF_GUI/cedt.jpg</iconset>
+    <normaloff>images/cedt.jpg</normaloff>images/cedt.jpg</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -493,8 +493,8 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>340</x>
      <y>50</y>
-     <width>161</width>
-     <height>61</height>
+     <width>154</width>
+     <height>44</height>
     </rect>
    </property>
    <property name="palette">
@@ -511,10 +511,10 @@ p, li { white-space: pre-wrap; }
       </colorrole>
       <colorrole role="Button">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
@@ -592,10 +592,10 @@ p, li { white-space: pre-wrap; }
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
@@ -648,10 +648,10 @@ p, li { white-space: pre-wrap; }
       </colorrole>
       <colorrole role="Button">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
@@ -729,10 +729,10 @@ p, li { white-space: pre-wrap; }
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
@@ -785,10 +785,10 @@ p, li { white-space: pre-wrap; }
       </colorrole>
       <colorrole role="Button">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
@@ -857,19 +857,19 @@ p, li { white-space: pre-wrap; }
       </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
-        <color alpha="220">
-         <red>212</red>
-         <green>212</green>
-         <blue>212</blue>
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
         </color>
        </brush>
       </colorrole>
@@ -919,15 +919,21 @@ p, li { white-space: pre-wrap; }
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-style: solid;
+    <string notr="true"> background-color: white;
+ border-style: solid;
  border-width:2px;
- border-color: black;</string>
+ border-color: black;
+ max-width:150px;
+ max-height:40px;
+ min-width:150px;
+ min-height:40px;
+background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../development/ACT_ZIF_GUI/cedt.jpg</pixmap>
+    <pixmap>images/cedt.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -936,7 +942,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>0</y>
      <width>501</width>
      <height>61</height>
@@ -958,30 +964,7 @@ p, li { white-space: pre-wrap; }
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>71</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../../development/ACT_ZIF_GUI/beta.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
   <zorder>label_2</zorder>
-  <zorder>label_4</zorder>
   <zorder>buttonBox</zorder>
   <zorder>textBrowser</zorder>
   <zorder>label</zorder>

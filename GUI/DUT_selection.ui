@@ -59,7 +59,7 @@ border-style: solid;
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>60</x>
      <y>20</y>
      <width>521</width>
      <height>20</height>
@@ -229,7 +229,7 @@ border-style: solid;
  max-height:140px;
  min-width:140px;
  min-height:140px;
-background-image: url(/home/uka_in/development/ACT_ZIF_GUI/diode.jpg)</string>
+background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/diode.jpg)</string>
    </property>
    <property name="text">
     <string>2 terminal device</string>
@@ -266,7 +266,7 @@ background-image: url(/home/uka_in/development/ACT_ZIF_GUI/diode.jpg)</string>
  max-height:140px;
  min-width:140px;
  min-height:140px;
-background-image: url(/home/uka_in/development/ACT_ZIF_GUI/bjt.jpg)</string>
+background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/bjt.jpg)</string>
    </property>
    <property name="text">
     <string>3 terminal device</string>
@@ -288,22 +288,28 @@ background-image: url(/home/uka_in/development/ACT_ZIF_GUI/bjt.jpg)</string>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>10</y>
-     <width>101</width>
-     <height>41</height>
+     <width>154</width>
+     <height>44</height>
     </rect>
    </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-style: solid;
+    <string notr="true"> background-color: white;
+ border-style: solid;
  border-width:2px;
- border-color: black;</string>
+ border-color: black;
+ max-width:150px;
+ max-height:40px;
+ min-width:150px;
+ min-height:40px;
+background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)</string>
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../../development/ACT_ZIF_GUI/cedt.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

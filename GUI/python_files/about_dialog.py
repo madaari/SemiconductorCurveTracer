@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'about_dialog.ui'
 #
-# Created: Fri Mar 30 01:49:23 2018
+# Created: Fri Mar 30 02:47:54 2018
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -165,7 +165,7 @@ class Ui_Dialog(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ToolTipText, brush)
         Dialog.setPalette(palette)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("../../../development/ACT_ZIF_GUI/cedt.jpg")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("images/cedt.jpg")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog.setWindowIcon(icon)
         Dialog.setWindowOpacity(1.0)
         Dialog.setAutoFillBackground(False)
@@ -181,12 +181,12 @@ class Ui_Dialog(object):
         self.label.setGeometry(QtCore.QRect(10, 320, 361, 31))
         self.label.setObjectName(_fromUtf8("label"))
         self.label_2 = QtGui.QLabel(Dialog)
-        self.label_2.setGeometry(QtCore.QRect(340, 50, 161, 61))
+        self.label_2.setGeometry(QtCore.QRect(340, 50, 154, 44))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255, 220))
@@ -213,7 +213,7 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
@@ -231,7 +231,7 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255, 220))
@@ -258,7 +258,7 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
@@ -276,7 +276,7 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(106, 106, 106, 220))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255, 220))
@@ -300,10 +300,10 @@ class Ui_Dialog(object):
         brush = QtGui.QBrush(QtGui.QColor(106, 106, 106, 220))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(212, 212, 212, 220))
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
@@ -320,15 +320,21 @@ class Ui_Dialog(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ToolTipText, brush)
         self.label_2.setPalette(palette)
         self.label_2.setAutoFillBackground(False)
-        self.label_2.setStyleSheet(_fromUtf8("border-style: solid;\n"
+        self.label_2.setStyleSheet(_fromUtf8(" background-color: white;\n"
+" border-style: solid;\n"
 " border-width:2px;\n"
-" border-color: black;"))
+" border-color: black;\n"
+" max-width:150px;\n"
+" max-height:40px;\n"
+" min-width:150px;\n"
+" min-height:40px;\n"
+"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)"))
         self.label_2.setText(_fromUtf8(""))
-        self.label_2.setPixmap(QtGui.QPixmap(_fromUtf8("../../../development/ACT_ZIF_GUI/cedt.jpg")))
+        self.label_2.setPixmap(QtGui.QPixmap(_fromUtf8("images/cedt.png")))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.label_3 = QtGui.QLabel(Dialog)
-        self.label_3.setGeometry(QtCore.QRect(10, 0, 501, 61))
+        self.label_3.setGeometry(QtCore.QRect(0, 0, 501, 61))
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Ubuntu"))
         font.setPointSize(19)
@@ -338,13 +344,6 @@ class Ui_Dialog(object):
         self.label_3.setFont(font)
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName(_fromUtf8("label_3"))
-        self.label_4 = QtGui.QLabel(Dialog)
-        self.label_4.setGeometry(QtCore.QRect(0, 0, 71, 81))
-        self.label_4.setText(_fromUtf8(""))
-        self.label_4.setPixmap(QtGui.QPixmap(_fromUtf8("../../../development/ACT_ZIF_GUI/beta.png")))
-        self.label_4.setScaledContents(True)
-        self.label_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_4.setObjectName(_fromUtf8("label_4"))
 
         self.retranslateUi(Dialog)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), Dialog.accept)

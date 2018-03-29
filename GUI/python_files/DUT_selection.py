@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'DUT_selection.ui'
 #
-# Created: Fri Mar 30 01:50:09 2018
+# Created: Fri Mar 30 02:41:29 2018
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -43,7 +43,7 @@ class Ui_Dialog(object):
 "border-style: solid;\n"
 " border-radius:0px;"))
         self.label = QtGui.QLabel(Dialog)
-        self.label.setGeometry(QtCore.QRect(30, 20, 521, 20))
+        self.label.setGeometry(QtCore.QRect(60, 20, 521, 20))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
@@ -108,7 +108,7 @@ class Ui_Dialog(object):
 " max-height:140px;\n"
 " min-width:140px;\n"
 " min-height:140px;\n"
-"background-image: url(/home/uka_in/development/ACT_ZIF_GUI/diode.jpg)"))
+"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/diode.jpg)"))
         self.pushButton.setFlat(False)
         self.pushButton.setObjectName(_fromUtf8("pushButton"))
         self.pushButton_2 = QtGui.QPushButton(Dialog)
@@ -127,18 +127,24 @@ class Ui_Dialog(object):
 " max-height:140px;\n"
 " min-width:140px;\n"
 " min-height:140px;\n"
-"background-image: url(/home/uka_in/development/ACT_ZIF_GUI/bjt.jpg)"))
+"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/bjt.jpg)"))
         self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
         self.label_3 = QtGui.QLabel(Dialog)
         self.label_3.setGeometry(QtCore.QRect(10, 110, 251, 41))
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.label_4 = QtGui.QLabel(Dialog)
-        self.label_4.setGeometry(QtCore.QRect(10, 10, 101, 41))
-        self.label_4.setStyleSheet(_fromUtf8("border-style: solid;\n"
+        self.label_4.setGeometry(QtCore.QRect(20, 10, 154, 44))
+        self.label_4.setAutoFillBackground(False)
+        self.label_4.setStyleSheet(_fromUtf8(" background-color: white;\n"
+" border-style: solid;\n"
 " border-width:2px;\n"
-" border-color: black;"))
+" border-color: black;\n"
+" max-width:150px;\n"
+" max-height:40px;\n"
+" min-width:150px;\n"
+" min-height:40px;\n"
+"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)"))
         self.label_4.setText(_fromUtf8(""))
-        self.label_4.setPixmap(QtGui.QPixmap(_fromUtf8("../../../development/ACT_ZIF_GUI/cedt.jpg")))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName(_fromUtf8("label_4"))
 

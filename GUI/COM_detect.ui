@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>470</width>
     <height>255</height>
    </rect>
   </property>
@@ -16,9 +16,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>0</y>
-     <width>351</width>
+     <width>451</width>
      <height>61</height>
     </rect>
    </property>
@@ -35,7 +35,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>70</x>
      <y>90</y>
      <width>311</width>
      <height>31</height>
@@ -48,7 +48,7 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>250</x>
      <y>120</y>
      <width>51</width>
      <height>17</height>
@@ -61,7 +61,7 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>235</x>
+     <x>310</x>
      <y>120</y>
      <width>151</width>
      <height>21</height>
@@ -74,7 +74,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>60</y>
      <width>181</width>
      <height>21</height>
@@ -183,7 +183,7 @@
     <rect>
      <x>10</x>
      <y>160</y>
-     <width>201</width>
+     <width>281</width>
      <height>31</height>
     </rect>
    </property>
@@ -194,7 +194,7 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>290</x>
      <y>150</y>
      <width>171</width>
      <height>51</height>
@@ -210,7 +210,7 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>237</x>
+     <x>310</x>
      <y>210</y>
      <width>131</width>
      <height>31</height>
@@ -223,17 +223,28 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>220</y>
-     <width>141</width>
-     <height>31</height>
+     <x>20</x>
+     <y>200</y>
+     <width>154</width>
+     <height>44</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: white;
+ border-style: solid;
+ border-width:2px;
+ border-color: black;
+ max-width:150px;
+ max-height:40px;
+ min-width:150px;
+ min-height:40px;
+background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../development/ACT_ZIF_GUI/cedt.jpg</pixmap>
+    <pixmap>images/cedt.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
