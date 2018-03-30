@@ -317,5 +317,38 @@ background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>423</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'DUT_selection.ui'
 #
-# Created: Fri Mar 30 02:41:29 2018
+# Created: Fri Mar 30 21:46:08 2018
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -149,6 +149,8 @@ class Ui_Dialog(object):
         self.label_4.setObjectName(_fromUtf8("label_4"))
 
         self.retranslateUi(Dialog)
+        QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_click)
+        QtCore.QObject.connect(self.pushButton_2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_2_click)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
@@ -158,6 +160,17 @@ class Ui_Dialog(object):
         self.pushButton.setText(_translate("Dialog", "2 terminal device", None))
         self.pushButton_2.setText(_translate("Dialog", "3 terminal device", None))
         self.label_3.setText(_translate("Dialog", "Which type of device are you testing?", None))
+
+    def pushButton_click(self):
+        print "2 terminal device pressed"
+        print self.get_text()
+
+    def pushButton_2_click(self):
+        print "3 terminal device pressed"
+        print self.get_text()
+
+    def get_text(self):
+        return self.plainTextEdit.toPlainText()
 
 
 if __name__ == "__main__":

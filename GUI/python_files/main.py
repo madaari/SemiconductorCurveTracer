@@ -27,10 +27,22 @@ def call_window2():
     Dialog2.exec_()
     sys.exit(app.exec_())
 
+# Overriding virtual functions
 class UI_WIN1(win1_ui):
     def win1_accept(self):
         print "2 Accepted"
         call_window2();
+        sys.exit()
+
+class UI_WIN2(win2_ui):
+    def pushButton_click(self):
+        print "2 terminal device pressed"
+        print self.get_text()
+        sys.exit()
+
+    def pushButton_2_click(self):
+        print "3 terminal device pressed"
+        print self.get_text()
         sys.exit()
 
 if __name__ == "__main__":
