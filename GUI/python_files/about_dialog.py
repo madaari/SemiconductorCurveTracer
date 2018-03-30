@@ -8,6 +8,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
+import sys
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -346,8 +347,8 @@ class Ui_Dialog(object):
         self.label_3.setObjectName(_fromUtf8("label_3"))
 
         self.retranslateUi(Dialog)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), Dialog.accept)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), Dialog.reject)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), self.win1_accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), self.reject)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
@@ -365,6 +366,14 @@ class Ui_Dialog(object):
         self.label_2.setWhatsThis(_translate("Dialog", "<html><head/><body><p align=\"center\"><a href=\"http://cedtnsit.in/\"><span style=\" font-size:8pt; font-weight:600; color:#0000ff;\">Centre for Electronics Design and Technology</span></a></p></body></html>", None))
         self.label_3.setText(_translate("Dialog", "Arduino Curve Tracer User Interface ", None))
 
+    def reject(self):
+        print "Rejected"
+        sys.exit()
+
+    def win1_accept(self):
+        print "1 Accepted"
+
+
 
 if __name__ == "__main__":
     import sys
@@ -372,6 +381,7 @@ if __name__ == "__main__":
     Dialog = QtGui.QDialog()
     ui = Ui_Dialog()
     ui.setupUi(Dialog)
+    Dialog.move(500,100)
     Dialog.show()
     sys.exit(app.exec_())
 
