@@ -163,11 +163,12 @@ class Ui_Dialog(object):
 
     def pushButton_click(self):
         print "2 terminal device pressed"
-        print self.get_text()
+        #print self.get_text()
+        #self.to_be_override()
 
     def pushButton_2_click(self):
         print "3 terminal device pressed"
-        print self.get_text()
+        #print self.get_text()
 
     def get_text(self):
         return self.plainTextEdit.toPlainText()

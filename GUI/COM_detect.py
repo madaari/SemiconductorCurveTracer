@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'COM_detect.ui'
 #
-# Created: Sat Mar 31 04:26:33 2018
+# Created: Sat Mar 31 04:39:09 2018
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -24,7 +24,6 @@ except AttributeError:
         return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_Dialog(object):
-    number = 0
     def setupUi(self, Dialog):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(475, 371)
@@ -113,15 +112,14 @@ class Ui_Dialog(object):
         self.listWidget.setObjectName(_fromUtf8("listWidget"))
         item = QtGui.QListWidgetItem()
         self.listWidget.addItem(item)
-        self.number = 0
         self.label_8 = QtGui.QLabel(Dialog)
         self.label_8.setGeometry(QtCore.QRect(10, 220, 371, 41))
         self.label_8.setWordWrap(True)
         self.label_8.setObjectName(_fromUtf8("label_8"))
 
         self.retranslateUi(Dialog)
-        QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_click)
-        QtCore.QObject.connect(self.pushButton_2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_2_click)
+        QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton.click)
+        QtCore.QObject.connect(self.pushButton_2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_2.click)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
@@ -133,29 +131,12 @@ class Ui_Dialog(object):
         self.label_4.setText(_translate("Dialog", "Device selected:", None))
         self.pushButton_2.setText(_translate("Dialog", "Proceed", None))
         self.label_7.setText(_translate("Dialog", "2 terminal device named Blue LED", None))
+        __sortingEnabled = self.listWidget.isSortingEnabled()
+        self.listWidget.setSortingEnabled(False)
+        item = self.listWidget.item(0)
+        item.setText(_translate("Dialog", "default_item", None))
+        self.listWidget.setSortingEnabled(__sortingEnabled)
         self.label_8.setText(_translate("Dialog", "Select the desired COM port and click on Proceed", None))
-
-    def pushButton_2_click(self):
-        print "pushButton_2"
-        sys.exit()
-
-    def pushButton_click(self):
-        print "pushButton"
-        sys.exit()
-
-    def set_label(self,device_name,device_type):
-        self.label_7.setText(_translate("Dialog", device_type+" named "+device_name, None))
-
-    def add_item(self,text,number=1):
-        item = self.listWidget.item(self.number)
-        if number == 1:
-            item = self.listWidget.item(0)
-            item.setText(_translate("Dialog", text, None))
-            self.number = self.number + 1
-        else:
-            if number == 0:
-                item = self.listWidget.item(0)
-                item.setText(_translate("Dialog", text, None))
 
 
 if __name__ == "__main__":
