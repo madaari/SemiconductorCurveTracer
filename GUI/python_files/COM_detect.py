@@ -25,6 +25,8 @@ except AttributeError:
 
 class Ui_Dialog(object):
     number = 0
+    dev_name = ""
+    dev_type = ""
     def setupUi(self, Dialog):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(475, 371)
@@ -40,8 +42,9 @@ class Ui_Dialog(object):
         self.label_2.setGeometry(QtCore.QRect(260, 150, 51, 17))
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.label_3 = QtGui.QLabel(Dialog)
-        self.label_3.setGeometry(QtCore.QRect(290, 170, 151, 21))
+        self.label_3.setGeometry(QtCore.QRect(290, 170, 151, 31))
         self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.label_3.setWordWrap(True)
         self.label_4 = QtGui.QLabel(Dialog)
         self.label_4.setGeometry(QtCore.QRect(10, 20, 111, 16))
         palette = QtGui.QPalette()
@@ -98,7 +101,7 @@ class Ui_Dialog(object):
 " max-height:40px;\n"
 " min-width:150px;\n"
 " min-height:40px;\n"
-"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)"))
+"background-image: url(../images/cedt.jpg)"))
         self.label_6.setText(_fromUtf8(""))
         self.label_6.setPixmap(QtGui.QPixmap(_fromUtf8("images/cedt.png")))
         self.label_6.setScaledContents(True)
@@ -122,6 +125,8 @@ class Ui_Dialog(object):
         self.retranslateUi(Dialog)
         QtCore.QObject.connect(self.pushButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_click)
         QtCore.QObject.connect(self.pushButton_2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.pushButton_2_click)
+        QtCore.QObject.connect(self.listWidget, QtCore.SIGNAL(_fromUtf8("itemClicked(QListWidgetItem*)")), self.listWidget_update)
+
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
@@ -145,6 +150,8 @@ class Ui_Dialog(object):
 
     def set_label(self,device_name,device_type):
         self.label_7.setText(_translate("Dialog", device_type+" named "+device_name, None))
+        self.dev_type = device_type
+        self.dev_name = device_name
 
     def add_item(self,text,number=1):
         item = self.listWidget.item(self.number)
@@ -156,6 +163,26 @@ class Ui_Dialog(object):
             if number == 0:
                 item = self.listWidget.item(0)
                 item.setText(_translate("Dialog", text, None))
+
+    def set_progressbar_value(self,value):
+        self.progressBar.setProperty("value", value)
+
+    def set_progress_label(self,text):
+        self.label_5.setText(_fromUtf8(""+text))
+
+    def listWidget_update(self):
+        print "selected"
+        print self.listWidget.currentItem().text()
+        self.label_3.setText(_translate("Dialog","COM port selected: "+ self.listWidget.currentItem().text() , None))
+
+    def get_device_name(self):
+        return self.dev_name
+
+    def get_device_type(self):
+        return self.dev_type
+
+    def get_COM(self):
+        return self.listWidget.currentItem().text()
 
 
 if __name__ == "__main__":

@@ -108,7 +108,7 @@ class Ui_Dialog(object):
 " max-height:140px;\n"
 " min-width:140px;\n"
 " min-height:140px;\n"
-"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/diode.jpg)"))
+"background-image: url(../images/diode.jpg)"))
         self.pushButton.setFlat(False)
         self.pushButton.setObjectName(_fromUtf8("pushButton"))
         self.pushButton_2 = QtGui.QPushButton(Dialog)
@@ -127,7 +127,7 @@ class Ui_Dialog(object):
 " max-height:140px;\n"
 " min-width:140px;\n"
 " min-height:140px;\n"
-"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/bjt.jpg)"))
+"background-image: url(../images/bjt.jpg)"))
         self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
         self.label_3 = QtGui.QLabel(Dialog)
         self.label_3.setGeometry(QtCore.QRect(10, 110, 251, 41))
@@ -143,7 +143,7 @@ class Ui_Dialog(object):
 " max-height:40px;\n"
 " min-width:150px;\n"
 " min-height:40px;\n"
-"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)"))
+"background-image: url(../images/cedt.jpg)"))
         self.label_4.setText(_fromUtf8(""))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName(_fromUtf8("label_4"))

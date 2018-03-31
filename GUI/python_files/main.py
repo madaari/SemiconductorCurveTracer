@@ -5,6 +5,7 @@ from about_dialog import Ui_Dialog as win1_ui
 from DUT_selection import Ui_Dialog as win2_ui
 from COM_detect import Ui_Dialog as win3_ui
 import sys,glob,serial
+from time import sleep
 
 app = QtGui.QApplication(sys.argv)
 #For window 1
@@ -47,7 +48,10 @@ class UI_WIN2(win2_ui):
 
 class UI_WIN3(win3_ui):
     def pushButton_2_click(self):
-        print "pushButton_2"
+        print "pushButton_2_io"
+        print self.get_device_name()
+        print self.get_device_type()
+        print self.get_COM()
         sys.exit()
 
     def pushButton_click(self):
@@ -77,6 +81,7 @@ def call_window3(device_name,device_type):
 
     ui_3.setupUi(Dialog3)
     ui_3.set_label(device_name,device_type)
+    ui_3.set_progressbar_value(4)
     Dialog3.move(500,100)
     Dialog3.setWindowModality(QtCore.Qt.ApplicationModal)
     Dialog3.exec_()
@@ -97,10 +102,19 @@ def serial_ports():
     elif sys.platform.startswith('darwin'):
         ports = glob.glob('/dev/tty.*')
     else:
+        ui_3.set_progressbar_value(0)
+        ui_3.set_progress_label("Error detecting COM ports, unsupported OS")
         raise EnvironmentError('Unsupported platform')
 
+    ui_3.set_progress_label("Detecting COM ports")
+    # Fake progress bar
+    for i in range(5,101):
+        ui_3.set_progressbar_value(i)
+        sleep(0.001)
+    ui_3.set_progress_label("COM ports detected")
+
     result = []
-    #ui_3.add_item("None",0)
+    ui_3.add_item("None",0)
     for port in ports:
         try:
             s = serial.Serial(port)
@@ -113,12 +127,4 @@ def serial_ports():
 
 if __name__ == "__main__":
     call_window1()
-    #call_window3()
-    #For window 3
-    #Dialog3 = QtGui.QDialog()
-    #ui_3 = win3_ui()
-    #ui_3.setupUi(Dialog3)
-    #Dialog3.move(500,100)
-    #Dialog3.show()
-
     sys.exit(app.exec_())

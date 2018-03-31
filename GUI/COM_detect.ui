@@ -313,12 +313,12 @@ background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images
    <slot>click()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>118</x>
-     <y>168</y>
+     <x>368</x>
+     <y>108</y>
     </hint>
     <hint type="destinationlabel">
-     <x>118</x>
-     <y>168</y>
+     <x>368</x>
+     <y>108</y>
     </hint>
    </hints>
   </connection>
@@ -330,11 +330,27 @@ background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images
    <hints>
     <hint type="sourcelabel">
      <x>336</x>
-     <y>309</y>
+     <y>319</y>
     </hint>
     <hint type="destinationlabel">
      <x>335</x>
-     <y>309</y>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>listWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>117</y>
     </hint>
    </hints>
   </connection>

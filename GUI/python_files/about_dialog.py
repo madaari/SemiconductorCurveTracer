@@ -329,7 +329,7 @@ class Ui_Dialog(object):
 " max-height:40px;\n"
 " min-width:150px;\n"
 " min-height:40px;\n"
-"background-image: url(/home/uka_in/workspace/SemiconductorCurveTracer/GUI/images/cedt.jpg)"))
+"background-image: url(../images/cedt.jpg)"))
         self.label_2.setText(_fromUtf8(""))
         self.label_2.setPixmap(QtGui.QPixmap(_fromUtf8("images/cedt.png")))
         self.label_2.setScaledContents(True)
